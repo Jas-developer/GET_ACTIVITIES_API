@@ -1,0 +1,17 @@
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\bin\Debug\net7.0\Application.deps.json
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\bin\Debug\net7.0\Application.dll
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\bin\Debug\net7.0\Application.pdb
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\bin\Debug\net7.0\Domain.dll
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\bin\Debug\net7.0\Persistence.dll
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\bin\Debug\net7.0\Domain.pdb
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\bin\Debug\net7.0\Persistence.pdb
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\obj\Debug\net7.0\Application.csproj.AssemblyReference.cache
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\obj\Debug\net7.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\obj\Debug\net7.0\Application.AssemblyInfoInputs.cache
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\obj\Debug\net7.0\Application.AssemblyInfo.cs
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\obj\Debug\net7.0\Application.csproj.CoreCompileInputs.cache
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\obj\Debug\net7.0\Application.csproj.CopyComplete
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\obj\Debug\net7.0\Application.dll
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\obj\Debug\net7.0\refint\Application.dll
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\obj\Debug\net7.0\Application.pdb
+C:\PROJECTS\DOTNET+REACT\Reactivities\Application\obj\Debug\net7.0\ref\Application.dll
