@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Header } from "semantic-ui-react";
+import List from "semantic-ui-react/dist/commonjs/elements/List";
 
 type ActivityType = {
   id: string;
@@ -14,15 +16,16 @@ function App() {
     axios.get("http://localhost:5000/api/activities").then((response) => {
       const result = response.data;
       setActivities(result);
+      console.log(result);
     });
   }, []);
 
   return (
     <section>
-      <h1>Reactivities</h1>
+      <Header as="h2" icon="users" content="Reactivities" />
       <ul>
-        {activities.map((activity) => (
-          <li key={activity.id}>{activity.description}</li>
+        {activities.map((activity: ActivityType) => (
+          <List.Item key={activity.id}>{activity.description}</List.Item>
         ))}
       </ul>
     </section>
