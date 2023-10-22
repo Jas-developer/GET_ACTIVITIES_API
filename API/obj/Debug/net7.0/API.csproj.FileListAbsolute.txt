@@ -75,3 +75,5 @@ C:\PROJECTS\DOTNET+REACT\Reactivities\API\bin\Debug\net7.0\runtimes\win-x64\nati
 C:\PROJECTS\DOTNET+REACT\Reactivities\API\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\PROJECTS\DOTNET+REACT\Reactivities\API\bin\Debug\net7.0\MediatR.dll
 C:\PROJECTS\DOTNET+REACT\Reactivities\API\bin\Debug\net7.0\MediatR.Contracts.dll
+C:\PROJECTS\DOTNET+REACT\Reactivities\API\bin\Debug\net7.0\AutoMapper.dll
+C:\PROJECTS\DOTNET+REACT\Reactivities\API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

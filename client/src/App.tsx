@@ -25,7 +25,7 @@ function App() {
       <Header as="h2" icon="users" content="Reactivities" />
       <ul>
         {activities.map((activity: ActivityType) => (
-          <List.Item key={activity.id}>{activity.description}</List.Item>
+          <List.Item key={activity.id}>{activity.title}</List.Item>
         ))}
       </ul>
     </section>
