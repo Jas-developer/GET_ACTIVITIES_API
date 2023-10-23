@@ -3,9 +3,13 @@ import { Activity } from "../../../app/models/activity";
 
 interface Props {
   activity: Activity;
+  cancelSelectedActivity: () => void;
 }
 
-export const ActivityDetails = ({ activity }: Props) => {
+export const ActivityDetails = ({
+  activity,
+  cancelSelectedActivity,
+}: Props) => {
   return (
     <section>
       <Card fluid>
@@ -20,7 +24,12 @@ export const ActivityDetails = ({ activity }: Props) => {
         <Card.Content extra>
           <Button.Group widths="2">
             <Button basic color="blue" content="Edit" />
-            <Button basic color="grey" content="Cancel" />
+            <Button
+              onClick={cancelSelectedActivity}
+              basic
+              color="grey"
+              content="Cancel"
+            />
           </Button.Group>
         </Card.Content>
       </Card>
