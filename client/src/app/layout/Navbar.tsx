@@ -1,7 +1,11 @@
 import Logo from "../../assets/logo.png";
 import { Button, Container, Menu } from "semantic-ui-react";
 
-const NavBar = () => {
+interface Props {
+  openForm: () => void;
+}
+
+const NavBar = ({ openForm }: Props) => {
   return (
     <header>
       <Menu inverted fixed="top" style={{ padding: "10px" }}>
@@ -12,7 +16,7 @@ const NavBar = () => {
           </Menu.Item>
           <Menu.Item name="Activities" />
           <Menu>
-            <Button positive content="Create Activity" />
+            <Button onClick={openForm} positive content="Create Activity" />
           </Menu>
         </Container>
       </Menu>

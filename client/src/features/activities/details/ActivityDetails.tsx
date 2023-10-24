@@ -4,11 +4,13 @@ import { Activity } from "../../../app/models/activity";
 interface Props {
   activity: Activity;
   cancelSelectedActivity: () => void;
+  openForm: (id: string) => void;
 }
 
 export const ActivityDetails = ({
   activity,
   cancelSelectedActivity,
+  openForm,
 }: Props) => {
   return (
     <section>
@@ -23,7 +25,12 @@ export const ActivityDetails = ({
         </Card.Content>
         <Card.Content extra>
           <Button.Group widths="2">
-            <Button basic color="blue" content="Edit" />
+            <Button
+              onClick={() => openForm(activity.id)}
+              basic
+              color="blue"
+              content="Edit"
+            />
             <Button
               onClick={cancelSelectedActivity}
               basic
