@@ -8,14 +8,19 @@ export default class ActivityStore {
   selectedActivity: Activity | undefined = undefined;
   editMode = false;
   loading = false;
-  loadingInitial = false;
+  loadingInitial = true;
 
   constructor() {
     makeAutoObservable(this);
   }
 
+  get activitiesByDate() {
+    return Array.from(this.activities.values()).sort(
+      (a, b) => Date.parse(a.date) - Date.parse(b.date)
+    );
+  }
+
   loadActivities = async () => {
-    this.setLoadingInitial(true);
     try {
       const activities = await agent.Activities.list();
 
@@ -82,6 +87,23 @@ export default class ActivityStore {
         ];
         this.selectedActivity = activity;
         this.editMode = false;
+        this.loading = false;
+      });
+    } catch (error) {
+      console.log(error);
+      runInAction(() => {
+        this.loading = false;
+      });
+    }
+  };
+
+  deleteActivity = async (id: string) => {
+    this.loading = true;
+    try {
+      await agent.Activities.delete(id);
+      runInAction(() => {
+        this.activities = [...this.activities.filter((a) => a.id !== id)];
+        if (this.selectedActivity?.id === id) this.cancelSelectedActivity;
         this.loading = false;
       });
     } catch (error) {
