@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { NavBar } from "./Navbar";
-import { Container } from "semantic-ui-react";
 import React from "react";
 import { ActivityDashboard } from "../../features/activities/dashboard/ActivityDashboard";
 import { LoadingComponent } from "./LoadingComponent";
@@ -23,9 +22,9 @@ function App() {
   return (
     <React.Fragment>
       <NavBar />
-      <Container style={{ marginTop: "6rem" }}>
+      <section className="md:px-20 mt-2 md:mt-5">
         <ActivityDashboard />
-      </Container>
+      </section>
     </React.Fragment>
   );
 }

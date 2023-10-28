@@ -76,13 +76,15 @@ export const ActivityForm = observer(() => {
           value={activity.venue}
           onChange={handleInputChange}
         />
-        <Button
-          loading={loading}
-          floated="right"
-          positive
-          type="submit"
-          content="Submit"
-        />
+        {activity.title.length > 2 && (
+          <Button
+            loading={loading}
+            floated="right"
+            positive
+            type="submit"
+            content="Submit"
+          />
+        )}
         <Button
           loading={loading}
           onClick={closeForm}
